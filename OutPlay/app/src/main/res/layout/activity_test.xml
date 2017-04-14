@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="评论"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/listview_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_alignbottom"
+        android:layout_below="@id/top"
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_alignbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="添加评论"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发布" />
+    </LinearLayout>
+</RelativeLayout>
+
+

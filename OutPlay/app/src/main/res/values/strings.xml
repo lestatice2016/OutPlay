@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">玩转</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_app_intro">AppIntroActivity</string>
+    <string name="phonenumber">手机号</string>
+    <string name="password"> 密码 </string>
+    <string name="user_name">用户名</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_myself">MyselfActivity</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_content_show">ContentShowActivity</string>
+    <string name="title_activity_test2">test2</string>
+    <string name="title_activity_why">WhyActivity</string>
+    <string name="title_activity_why_no">WhyNoActivity</string>
+    <string name="title_activity_whyno">whynoActivity</string>
+    <string name="title_activity_crop_image">CropImageActivity</string>
+    <string name="title_activity_exit">ExitActivity</string>
+    <string name="title_activity_alter">AlterActivity</string>
+    <string name="title_activity_show_transation">ShowTransationActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_show_search">ShowSearchActivity</string>
+    <string name="title_activity_my_like">MyLikeActivity</string>
+    <string name="title_activity_my_collection">MyCollectionActivity</string>
+    <string name="title_activity_cache">CacheActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_baidu">BaiduActivity</string>
+</resources>

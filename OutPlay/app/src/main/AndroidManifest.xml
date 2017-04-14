@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.outplay" >
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="81yKaG6z9UTVVELwIIPZYspzYAIFSxHS" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".atys.AppIntroActivity"
+            android:label="@string/title_activity_app_intro"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.ContentShowActivity"
+            android:label="@string/title_activity_content_show"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.EditActivity"
+            android:label="@string/title_activity_edit"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.MyselfActivity"
+            android:label="@string/title_activity_myself"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.ShowActivity"
+            android:label="@string/title_activity_show"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.test"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.WelcomeActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.CropImageActivity"
+            android:label="@string/title_activity_crop_image"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.ExitActivity"
+            android:label="@string/title_activity_exit"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.AlterActivity"
+            android:label="@string/title_activity_alter"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.showSubactivity"
+            android:label="@string/title_activity_test2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.ShowTransationActivity"
+            android:label="@string/title_activity_show_transation"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.ShowSearchActivity"
+            android:label="@string/title_activity_show_search"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.MyLikeActivity"
+            android:label="@string/title_activity_my_like"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".atys.MyCollectionActivity"
+            android:label="@string/title_activity_my_collection"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".BaiduActivity"
+            android:label="@string/title_activity_baidu"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

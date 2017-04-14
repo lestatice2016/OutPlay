@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLoginRegister">
+
+    <ImageView
+        android:id="@+id/image_logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_phonenum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phonenumber"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/image_logo1"/>
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:phoneNumber="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_phonenum1"
+        />
+
+
+    <TextView
+        android:id="@+id/text_password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/phonenumber"/>
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text_password1"
+            android:password="true"/>
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/password"
+            android:layout_alignBottom="@+id/password"
+            android:textSize="12sp"
+            android:layout_marginLeft="2dp"
+            />
+
+
+    <Button
+        android:id="@+id/login_usual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"/>
+</RelativeLayout>

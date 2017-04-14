@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_comment_head_2"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/text_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image_comment_head_2"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:id="@+id/textv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_name_2"
+            android:layout_toRightOf="@+id/image_comment_head_2"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            />
+        <TextView android:id="@+id/show_comment_time_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textv_2"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview_out_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_alignbottom_2"
+        android:layout_below="@id/top"
+        android:paddingLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_alignbottom_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_comment_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发布" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+

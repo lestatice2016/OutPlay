@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/headimage"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="15dp"
+            />
+
+        <TextView
+            android:id="@+id/show_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="玩转小达人" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/frame_view">
+
+        <ImageView
+            android:id="@+id/logo_alter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/alter" />
+
+        <TextView
+            android:id="@+id/alter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo_alter"
+            android:layout_toRightOf="@+id/logo_alter"
+            android:text="修改资料"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_view"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/logo_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/like" />
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo_like"
+            android:layout_toRightOf="@+id/logo_like"
+            android:text="喜欢的帖子"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/frame_view"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/logo_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/collection" />
+
+        <TextView
+            android:id="@+id/keep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/logo_keep"
+            android:layout_toRightOf="@+id/logo_keep"
+            android:text="收藏的帖子"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo_exit"
+        android:layout_toRightOf="@+id/logo_exit"
+        android:gravity="center_horizontal"
+        android:text="退出应用"
+        android:textSize="25sp" />
+
+</LinearLayout>

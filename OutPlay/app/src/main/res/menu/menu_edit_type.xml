@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/publish_article"
+            android:title="分享文"/>
+        <item android:id="@+id/publish_transation"
+            android:title="交易帖"/>
+</menu>

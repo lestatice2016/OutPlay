@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText android:id="@+id/new_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入新的用户名"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:background="@drawable/frame_view"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"/>
+    <Button
+        android:id="@+id/alter_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"/>
+</LinearLayout>
