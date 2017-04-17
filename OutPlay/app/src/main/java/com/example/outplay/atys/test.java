@@ -33,16 +33,16 @@ import cn.bmob.v3.listener.SaveListener;
 public class test extends AppCompatActivity {
     EditText edit_comment;
     Button btn;
-
+    String id_commentor;
+    String name;
+    String path;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
         final String id_article=getIntent().getExtras().getString("id");
-        final String id_commentor=getIntent().getExtras().getString("cid");
-        final String name=getIntent().getExtras().getString("name");
-        final String path=getIntent().getExtras().getString("path");
+        MyUser myCurrentUser=BmobUser.getCurrentUser(MyUser.class);
 
         final ListView ll = (ListView) findViewById(R.id.listview_out);
         edit_comment=(EditText)findViewById(R.id.edit_comment);
@@ -74,7 +74,18 @@ public class test extends AppCompatActivity {
                 }
             }
         });
+        BmobQuery<MyUser> query1=new BmobQuery<>();
+        query1.getObject(myCurrentUser.getObjectId(), new QueryListener<MyUser>() {
+            @Override
+            public void done(MyUser myUser, BmobException e) {
 
+                if (e==null){
+                 id_commentor=myUser.getObjectId();
+                    name=myUser.getUsername();
+                    path=myUser.getImage();
+                }
+            }
+        });
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
