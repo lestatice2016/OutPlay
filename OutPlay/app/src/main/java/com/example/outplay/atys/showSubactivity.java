@@ -35,16 +35,19 @@ public class showSubactivity extends AppCompatActivity  {
     TextView name_pass;
     TextView time;
     TextView comm;
+    String uid;
+    String uname;
+    String upath;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test2);
 
         final String name=getIntent().getExtras().getString("name");
         final String image=getIntent().getExtras().getString("image");
-        final String id_commentor=getIntent().getExtras().getString("id_commentor");
         final String id_comment=getIntent().getExtras().getString("id_comment");
         final String comment=getIntent().getExtras().getString("comment");
         final String time_pass=getIntent().getExtras().getString("time");
+         MyUser myCurrentUser= BmobUser.getCurrentUser(MyUser.class);
 
         listView=(ListView)findViewById(R.id.listview_out_2);
         btn=(Button)findViewById(R.id.btn_2);
@@ -69,6 +72,18 @@ public class showSubactivity extends AppCompatActivity  {
                 listView.setAdapter(new MyAdapter(list));
             }
         });
+        BmobQuery<MyUser> query1=new BmobQuery<>();
+        query1.getObject(myCurrentUser.getObjectId(), new QueryListener<MyUser>() {
+            @Override
+            public void done(MyUser myUser, BmobException e) {
+
+                if (e == null) {
+                    uid = myUser.getObjectId();
+                    uname = myUser.getUsername();
+                    upath = myUser.getImage();
+                }
+            }
+        });
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,9 +91,9 @@ public class showSubactivity extends AppCompatActivity  {
                 SubComments subComments=new SubComments();
                 subComments.setComment(editText.getText().toString());
                 subComments.setId_comment(id_comment);
-                subComments.setId_commentor(id_commentor);
-                subComments.setImage_commentor(image);
-                subComments.setName_commentor(name);
+                subComments.setId_commentor(uid);
+                subComments.setImage_commentor(upath);
+                subComments.setName_commentor(uname);
                 subComments.save(new SaveListener<String>() {
                     @Override
                     public void done(String s, BmobException e) {
